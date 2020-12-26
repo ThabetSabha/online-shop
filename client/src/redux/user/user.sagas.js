@@ -64,7 +64,6 @@ function* isUserAuthenticated() {
         };
         yield getUserSnapshotFromUserAuthAndSignIn(userAuth);
     } catch (error) {
-        console.log(error);
         yield put(signInFailure(error));
     }
 
