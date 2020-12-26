@@ -32,11 +32,11 @@ googleProvider.setCustomParameters({ prompt: 'select_account' });
 
 //Getting the current userAuth:
 export const getCurrentUser = () => {
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve) => {
         const unsubscribe = auth.onAuthStateChanged(userAuth => {
             unsubscribe();
             resolve(userAuth);
-        }, reject(new Error("can't get userAuth")))
+        })
     })
 }
 
