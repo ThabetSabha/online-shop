@@ -18,7 +18,7 @@ import { auth, googleProvider, createUserProfileDocument, getCurrentUser } from 
 
 function* getUserSnapshotFromUserAuthAndSignIn(userAuth,additionalData) {
     try {
-        const userRef = yield yield call(
+        const userRef = yield call(
             createUserProfileDocument,
             userAuth,
             additionalData
@@ -29,7 +29,6 @@ function* getUserSnapshotFromUserAuthAndSignIn(userAuth,additionalData) {
             ...userSnapshot.data(),
         }));
     } catch (error) {
-        console.log(error);
         yield put(signInFailure(error));
     }
 }
