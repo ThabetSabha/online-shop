@@ -1,0 +1,32 @@
+.product-page-container{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+
+    img{
+        min-width: 25%;
+    }
+
+    .product-info{
+        text-align: center;
+        margin-left: 5rem;
+        @media screen and (max-width:850px){
+            margin-left: 1rem;
+        }
+        button{
+            margin: auto;
+            margin-top: 1rem;
+        }
+    }
+
+    p{  
+        max-width: 30vw ;
+        font-size: large;
+        @media screen and (max-width:850px){
+            max-width: 70vw;
+        }
+    }
+}
