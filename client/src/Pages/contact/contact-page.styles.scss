@@ -1,19 +1,16 @@
-.contact-page{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 35vw;
-    margin: auto;
-    margin-top: 4rem;
-    
-    @media screen and (max-width: 1000px){
-        width: 70vw;
-    }
-    
-    
-    .message-input {
-        height: 3rem;
-    }
-    
-}
+.contact-page {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 35vw;
+  margin: auto;
+  margin-top: 4rem;
 
+  @media screen and (max-width: 1000px) {
+    width: 70vw;
+  }
+
+  .message-input {
+    height: 3rem;
+  }
+}

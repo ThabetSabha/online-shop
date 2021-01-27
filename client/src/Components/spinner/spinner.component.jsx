@@ -1,17 +1,15 @@
-import React from 'react';
-import './spinner.styles.scss';
-
+import React from "react";
+import "./spinner.styles.scss";
 
 const Spinner = () => {
-    return (
-        <div className="spinner-overlay">
-            <div className="spinner-container" />
-        </div>
-    )
-}
+  return (
+    <div className="spinner-overlay">
+      <div className="spinner-container" />
+    </div>
+  );
+};
 
 export default Spinner;
-
 
 /*
 we can use an HOC :

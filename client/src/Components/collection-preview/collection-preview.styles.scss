@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
-  
 
   .title {
     font-size: 28px;
@@ -12,10 +11,10 @@
       color: grey;
     }
     @media screen and (max-width: 1000px) {
-      text-align: center ;
+      text-align: center;
     }
   }
-  
+
   .preview {
     display: flex;
     justify-content: space-between;
@@ -24,7 +23,6 @@
       display: grid;
       grid-gap: 15px;
       grid-template-columns: 1fr 1fr;
-      
     }
   }
 }

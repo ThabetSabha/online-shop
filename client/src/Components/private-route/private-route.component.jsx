@@ -1,18 +1,16 @@
-import React from 'react';
-import { Route, Redirect } from 'react-router-dom';
-import { useSelector } from 'react-redux';
-import { selectCurrentUser } from '../../redux/user/user.selectors';
+import React from "react";
+import { Route, Redirect } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { selectCurrentUser } from "../../redux/user/user.selectors";
 
 function PrivateRoute({ children, ...rest }) {
-    const currentUser = useSelector(selectCurrentUser);
-    return (
-        <Route {...rest} render={() =>
-        (
-            currentUser ? (<Redirect to='/' />) : (children)
-        )} />
-    )
+  const currentUser = useSelector(selectCurrentUser);
+  return (
+    <Route
+      {...rest}
+      render={() => (currentUser ? <Redirect to="/" /> : children)}
+    />
+  );
 }
-
-
 
 export default PrivateRoute;
